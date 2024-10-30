@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
 public class Hw_Person {
-    private String fullName; // ФИО
-    private String birthDate; // Дата рождения
-    private String phone; // Контактный телефон
-    private String city; // Город
-    private String country; // Страна
-    private String homeAddress; // Домашний адрес
+    private String fullName;
+    private String birthDate;
+    private String phone;
+    private String city;
+    private String country;
+    private String homeAddress;
 
-    // Конструктор
     public Hw_Person(String fullName, String birthDate, String phone, String city, String country, String homeAddress) {
         this.fullName = fullName;
         this.birthDate = birthDate;
@@ -18,7 +17,6 @@ public class Hw_Person {
         this.homeAddress = homeAddress;
     }
 
-    // Метод для ввода данных
     public void inputData() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите ФИО: ");
@@ -35,7 +33,6 @@ public class Hw_Person {
         homeAddress = scanner.nextLine();
     }
 
-    // Метод для вывода данных
     public void displayInfo() {
         System.out.println("ФИО: " + fullName);
         System.out.println("Дата рождения: " + birthDate);
@@ -45,7 +42,6 @@ public class Hw_Person {
         System.out.println("Домашний адрес: " + homeAddress);
     }
 
-    // Методы доступа
     public String getFullName() {
         return fullName;
     }
@@ -54,13 +50,11 @@ public class Hw_Person {
         return birthDate;
     }
 
-    // Метод main для тестирования класса
     public static void main(String[] args) {
         Hw_Person person = new Hw_Person("", "", "", "", "", "");
         person.inputData();
         person.displayInfo();
 
-        // Примеры использования методов getFullName() и getBirthDate()
         System.out.println("Полученное ФИО: " + person.getFullName());
         System.out.println("Полученная дата рождения: " + person.getBirthDate());
     }
