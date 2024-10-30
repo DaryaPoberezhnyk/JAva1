@@ -1,5 +1,3 @@
-package HW3;
-
 import java.util.List;
 
 public class Almanac extends Publication {

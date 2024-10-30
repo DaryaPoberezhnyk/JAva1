@@ -1,5 +1,3 @@
-import HW3.Publication;
-
 // Book.java - класс для книги
 public class Book extends Publication {
     private final String author;
