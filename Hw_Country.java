@@ -1,6 +1,6 @@
 public class Hw_Country {
-    private String name;
-    private int area;
+    private final String name;
+    private final int area;
 
     public Hw_Country(String name, int area) {
         this.name = name;
@@ -8,7 +8,7 @@ public class Hw_Country {
     }
 
     public Hw_Country(String name) {
-        this(name, 0);
+        this(name, 0); // Площадь по умолчанию 0
     }
 
     public void displayInfo() {
@@ -20,6 +20,9 @@ public class Hw_Country {
         country1.displayInfo();
 
         Hw_Country country2 = new Hw_Country("Польша");
+        country2.displayInfo();
+
+        country1.displayInfo();
         country2.displayInfo();
     }
 }

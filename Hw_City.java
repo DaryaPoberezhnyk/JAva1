@@ -1,6 +1,6 @@
 public class Hw_City {
-    private String name;
-    private int population;
+    private final String name;
+    private final int population;
 
     public Hw_City(String name, int population) {
         this.name = name;
@@ -22,7 +22,7 @@ public class Hw_City {
         Hw_City city2 = new Hw_City("Киев");
         city2.displayInfo();
 
-        Hw_City city3 = new Hw_City("Львов", 730000);
-        city3.displayInfo();
+        city1.displayInfo();
+        city2.displayInfo();
     }
 }
