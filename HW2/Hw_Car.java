@@ -1,3 +1,5 @@
+package HW2;
+
 public class Hw_Car {
     private final String model;
     private final String manufacturer;

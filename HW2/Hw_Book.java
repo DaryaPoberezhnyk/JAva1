@@ -1,3 +1,5 @@
+package HW2;
+
 public class Hw_Book {
     private final String title;
     private final String author;

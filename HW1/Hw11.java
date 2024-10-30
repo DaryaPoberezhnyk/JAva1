@@ -1,3 +1,5 @@
+package HW1;
+
 public class Hw11 {
     public static void drawLine(int length, boolean vertical, char symbol) {
         for (int i = 0; i < length; i++) {

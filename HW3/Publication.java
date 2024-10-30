@@ -1,3 +1,5 @@
+package HW3;
+
 public abstract class Publication
         implements LibraryItem {
     protected final String title;
